@@ -7,7 +7,7 @@ curl -XGET $GCC_SRC_URL > "$GCC_FSNAME.tar.gz"
 echo "Decompressing 'source.tar.gz'..."
 tar -xzf "$GCC_FSNAME.tar.gz"
 
-export SOURCE_DIR=$GCC_FSNAME
+export SOURCE_DIR=$(pwd)/$GCC_FSNAME
 export OBJECT_DIR=$(pwd)/object
 mkdir $OBJECT_DIR
 
