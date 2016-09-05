@@ -20,7 +20,7 @@ echo 'Downloading prerequisites...'
 cd $OBJECT_DIR
 
 echo 'Configuring...'
-$SOURCE_DIR/configure --prefix=$OBJECT_DIR/out > $LOGS_DIR/configure.log
+$SOURCE_DIR/configure --prefix=$OBJECT_DIR/out --enable-languages=c,c++ > $LOGS_DIR/configure.log
 
 echo "Contents of '$SOURCE_DIR'"
 ls -a $SOURCE_DIR
