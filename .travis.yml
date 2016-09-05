@@ -1,0 +1,17 @@
+sudo: required
+before_script:
+    - chmod u+x *
+script:
+    - ./build.sh
+branches:
+    only:
+        - master
+addons:
+    artifacts:
+        paths:
+            - object/out/*
+        target_paths: travis-artifacts/$TRAVIS_BUILD_ID
+    apt:
+        gcc
+        g++
+        make
