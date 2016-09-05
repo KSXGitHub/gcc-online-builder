@@ -8,6 +8,8 @@ deployment:
         branch:
             - master
             - test
+        heroku:
+            appname: gcc-binaries
 general:
     artifacts:
         - "object/out"
