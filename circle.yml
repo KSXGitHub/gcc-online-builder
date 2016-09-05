@@ -1,7 +1,8 @@
 dependencies:
     pre:
         - sudo apt-get install gcc-multilib g++-multilib
-        - ./build.sh:
+        - sudo chmod u+x *
+        - sudo ./build.sh:
             timeout: 1800
 deployment:
     staging:
