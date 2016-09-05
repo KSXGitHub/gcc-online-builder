@@ -10,7 +10,8 @@ tar -xzf "$GCC_FSNAME.tar.gz"
 export REPO_DIR=$(pwd)
 export SOURCE_DIR=$(pwd)/$GCC_FSNAME
 export OBJECT_DIR=$(pwd)/object
-mkdir $OBJECT_DIR
+export LOGS_DIR=$(pwd)/logs
+mkdir $OBJECT_DIR $LOGS_DIR
 
 cd $SOURCE_DIR
 echo 'Downloading prerequisites...'
@@ -29,13 +30,13 @@ echo "Contents of '$REPO_DIR'"
 ls -a $REPO_DIR
 
 echo 'Building...'
-make
+make > $LOGS_DIR/make.log
 
 echo 'Testing...'
-make -k check
+make -k check > $LOGS_DIR/make-check.log
 
 echo 'Installing...'
-make install
+make install > $LOGS_DIR/make-install.log
 
 echo "Contents of '$OBJECT_DIR'"
 ls -a $OBJECT_DIR
