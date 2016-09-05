@@ -11,7 +11,7 @@ export REPO_DIR=$(pwd)
 export SOURCE_DIR=$(pwd)/$GCC_FSNAME
 export OBJECT_DIR=$(pwd)/object
 export LOGS_DIR=$(pwd)/logs
-mkdir $OBJECT_DIR $LOGS_DIR
+mkdir $OBJECT_DIR $OBJECT_DIR/out $LOGS_DIR
 
 cd $SOURCE_DIR
 echo 'Downloading prerequisites...'
