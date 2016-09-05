@@ -12,6 +12,7 @@ addons:
             - object/out/*
         target_paths: travis-artifacts/$TRAVIS_BUILD_ID
     apt:
-        gcc
-        g++
-        make
+        packages:
+            - gcc
+            - g++
+            - make
