@@ -5,7 +5,7 @@ echo "Downloading source from '$GCC_SRC_URL'..."
 curl -XGET $GCC_SRC_URL > "$GCC_FSNAME.tar.gz"
 
 echo "Decompressing 'source.tar.gz'..."
-tar -xvzf "$GCC_FSNAME.tar.gz"
+tar -xzf "$GCC_FSNAME.tar.gz"
 
 export SOURCE_DIR=$GCC_FSNAME
 export OBJECT_DIR=$(pwd)/object
