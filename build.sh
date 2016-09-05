@@ -12,6 +12,7 @@ export OBJECT_DIR=$(pwd)/object
 mkdir $OBJECT_DIR
 
 cd $SOURCE_DIR
+ls -a $SOURCE_DIR
 
 echo 'Downloading prerequisites...'
 ./contrib/download_prerequisites
