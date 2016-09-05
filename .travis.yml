@@ -17,3 +17,5 @@ addons:
             - gcc
             - g++
             - make
+            - libc0.1-dev
+            - g++-multilib
