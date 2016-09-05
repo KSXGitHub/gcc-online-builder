@@ -11,6 +11,7 @@ addons:
     artifacts:
         paths:
             - object/out/*
+            - logs/*
         target_paths: travis-artifacts/$TRAVIS_BUILD_ID
     apt:
         packages:
