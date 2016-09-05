@@ -30,10 +30,10 @@ echo "Contents of '$REPO_DIR'"
 ls -a $REPO_DIR
 
 echo 'Building...'
-travis_wait 30 make
+make
 
 echo 'Installing...'
-travis_wait 30 make install
+make install
 
 echo "Contents of '$OBJECT_DIR'"
 ls -a $OBJECT_DIR
