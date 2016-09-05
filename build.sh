@@ -30,13 +30,10 @@ echo "Contents of '$REPO_DIR'"
 ls -a $REPO_DIR
 
 echo 'Building...'
-make > $LOGS_DIR/make.log
-
-echo 'Testing...'
-make -k check > $LOGS_DIR/make-check.log
+make
 
 echo 'Installing...'
-make install > $LOGS_DIR/make-install.log
+make install
 
 echo "Contents of '$OBJECT_DIR'"
 ls -a $OBJECT_DIR
