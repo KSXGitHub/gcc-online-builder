@@ -9,5 +9,5 @@ echo 'Downloading prerequisites...'
 ) || (
     exitcode=$?
     echo 'Failed' >&2
-    exit exitcode
+    exit $exitcode
 )
