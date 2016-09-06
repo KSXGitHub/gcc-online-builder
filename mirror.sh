@@ -1,1 +1,1 @@
-echo http://mirrors-usa.go-parts.com
+echo http://www.netgull.com/gcc/releases/
