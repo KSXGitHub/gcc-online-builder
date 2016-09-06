@@ -2,6 +2,10 @@ dependencies:
     pre:
         - sudo apt-get install gcc-multilib g++-multilib
         - sudo chmod u+x *
+        - ./download.sh
+        - ./prerequisites.sh
+test:
+    override:
         - ./build.sh:
             timeout: 1800
 deployment:

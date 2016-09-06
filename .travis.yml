@@ -2,6 +2,8 @@ language: generic
 sudo: required
 before_script:
     - chmod u+x *
+    - ./download.sh
+    - ./prerequisites.sh
 script:
     - ./build.sh
 branches:
