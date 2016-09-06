@@ -1,1 +1,1 @@
-echo http://www.netgull.com/gcc/releases
+echo http://www.netgull.com
