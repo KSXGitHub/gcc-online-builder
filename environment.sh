@@ -9,3 +9,4 @@ export SOURCE_DIR=$(pwd)/$GCC_FSNAME
 export OBJECT_DIR=$(pwd)/object
 export LOGS_DIR=$(pwd)/logs
 export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+mkdir $OBJECT_DIR $OBJECT_DIR/out $LOGS_DIR
