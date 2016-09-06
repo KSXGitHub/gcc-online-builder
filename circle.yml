@@ -1,6 +1,7 @@
 dependencies:
     pre:
         - sudo apt-get update -y
+        - sudo apt-get install -y gcc g++ make
         - sudo apt-get install -y gcc-multilib g++-multilib
         - sudo chmod u+x *
         - ./download.sh
