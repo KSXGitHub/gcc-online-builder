@@ -13,6 +13,6 @@ stat $SOURCE_DIR && (
     )
 
     echo "Decompressing '$GCC_SRC_URL'..."
-    tar -xzf $GCC_SRC_URL
+    tar -xzf $GCC_SRC_ARC
 
 )
