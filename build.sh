@@ -7,7 +7,7 @@ echo 'Configuring...'
 $SOURCE_DIR/configure --prefix=$OBJECT_DIR/out --enable-languages=c,c++ > $LOGS_DIR/configure.log
 
 echo 'Building...'
-make
+make -j 4
 
 echo 'Installing...'
-make install
+make -j 4 install
