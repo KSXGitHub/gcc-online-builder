@@ -1,12 +1,6 @@
 
 source ./environment.sh
 
-mkdir $OBJECT_DIR $OBJECT_DIR/out $LOGS_DIR
-
-cd $SOURCE_DIR
-echo 'Downloading prerequisites...'
-./contrib/download_prerequisites > $LOGS_DIR/prerequisites.log
-
 cd $OBJECT_DIR
 
 echo 'Configuring...'
