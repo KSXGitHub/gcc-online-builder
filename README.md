@@ -32,7 +32,7 @@ This repo does not contains GCC source code but contains some scripts to downloa
 
 ## Usage
 
-### In Continous Integration
+### In Continuous Integration
 
 Just log in and start the build!
 
